@@ -9,6 +9,9 @@ vendor/
 # Artefak graphify (generated, jangan di-commit)
 graphify-out/
 
+# Dokumen kerja internal DCI (bukan bagian produk)
+.trae/
+
 # Log & cache framework
 writable/
 logs/
@@ -30,3 +33,5 @@ p0-*.png
 Thumbs.db
 .Desktop.ini
 $RECYCLE.BIN/
+downloads/
+!downloads/.gitkeep
