@@ -1,0 +1,32 @@
+# Environment & rahasia
+.env
+.env.*
+!.env.example
+
+# Dependencies (dipatch untuk PHP 8.3 — JANGAN composer update)
+vendor/
+
+# Artefak graphify (generated, jangan di-commit)
+graphify-out/
+
+# Log & cache framework
+writable/
+logs/
+
+# Upload user (foto konten madrasah)
+public/uploads/about/
+public/uploads/principal/
+public/uploads/teachers/
+public/uploads/news/
+public/uploads/gallery/
+uploads/
+
+# Screenshot & artefak audit sementara
+audit-*.png
+p0-*.png
+.playwright-mcp/
+
+# OS
+Thumbs.db
+.Desktop.ini
+$RECYCLE.BIN/
