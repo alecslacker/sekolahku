@@ -180,16 +180,16 @@
                         <p class="small text-body-tertiary mb-3">Pilih skema warna untuk tampilan website</p>
                             <?php $current = $settings['theme_color'] ?? 'default'; ?>
                             <?php $themes = [
-                                'default' => ['label' => 'Default', 'color' => 'linear-gradient(135deg, #0c4a6e 0%, #14b8a6 50%, #f59e0b 100%)'],
+                                'green'   => ['label' => 'Hijau',   'color' => '#1B5E43'],
                                 'blue'    => ['label' => 'Biru',    'color' => '#203e77'],
-                                'green'   => ['label' => 'Hijau',   'color' => '#065f46'],
-                                'red'     => ['label' => 'Merah',   'color' => '#7c1d2e'],
-                                'gray'    => ['label' => 'Abu',     'color' => '#475569'],
-                                'purple'  => ['label' => 'Ungu',    'color' => '#5b21b6'],
                                 'navy'    => ['label' => 'Navy',    'color' => '#1e3a5f'],
-                                'brown'   => ['label' => 'Cokelat', 'color' => '#78350f'],
-                                'pink'    => ['label' => 'Pink',    'color' => '#9f1239'],
                                 'teal'    => ['label' => 'Teal',    'color' => '#115e59'],
+                                'brown'   => ['label' => 'Cokelat', 'color' => '#78350f'],
+                                'red'     => ['label' => 'Merah',   'color' => '#7c1d2e'],
+                                'pink'    => ['label' => 'Pink',    'color' => '#9f1239'],
+                                'purple'  => ['label' => 'Ungu',    'color' => '#5b21b6'],
+                                'gray'    => ['label' => 'Abu',     'color' => '#475569'],
+                                'default' => ['label' => 'Default (Hijau)', 'color' => '#1B5E43'],
                             ]; ?>
                             <div id="theme-picker">
                             <?php foreach (array_chunk($themes, 5, true) as $row): ?>
@@ -253,7 +253,7 @@
             <?php $principalData = !empty($settings['principal']) ? json_decode($settings['principal'], true) : []; ?>
             <div class="card shadow-sm border-0 rounded-3 mb-4">
                 <div class="card-header bg-transparent border-bottom-0 py-3 d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseKepsek" role="button">
-                    <h6 class="mb-0"><i class="fas fa-user-tie me-2 text-primary"></i>Kepala Sekolah</h6>
+                    <h6 class="mb-0"><i class="fas fa-user-tie me-2 text-primary"></i>Kepala Madrasah</h6>
                     <i class="fas fa-chevron-down fa-xs text-body-tertiary collapse-icon"></i>
                 </div>
                 <div class="collapse" id="collapseKepsek">
@@ -276,11 +276,11 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label small fw-medium">Jabatan</label>
-                            <input type="text" name="principal[role]" class="form-control" value="<?= $principalData['role'] ?? '' ?>" placeholder="Mis. Kepala Sekolah">
+                            <input type="text" name="principal[role]" class="form-control" value="<?= $principalData['role'] ?? '' ?>" placeholder="Mis. Kepala Madrasah">
                         </div>
                         <div class="mb-3">
                             <label class="form-label small fw-medium">Sambutan / Kutipan</label>
-                            <textarea name="principal[quote]" class="form-control" rows="3" placeholder="Sambutan atau kutipan dari kepala sekolah..."><?= $principalData['quote'] ?? '' ?></textarea>
+                            <textarea name="principal[quote]" class="form-control" rows="3" placeholder="Sambutan atau kutipan dari kepala madrasah..."><?= $principalData['quote'] ?? $principalData['welcome_message'] ?? '' ?></textarea>
                         </div>
                     </div>
                 </div>
@@ -536,6 +536,10 @@
                                 <div class="col-md-6">
                                     <label class="form-label small fw-medium">Subtitle</label>
                                     <input type="text" name="section_settings[<?= $key ?>][subtitle]" class="form-control form-control-sm" value="<?= esc($ss['subtitle'] ?? '') ?>" placeholder="Subtitle <?= $label ?>">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-medium">Deskripsi Singkat</label>
+                                    <input type="text" name="section_settings[<?= $key ?>][desc]" class="form-control form-control-sm" value="<?= esc($ss['desc'] ?? '') ?>" placeholder="Deskripsi singkat yang tampil di bawah judul section">
                                 </div>
                             </div>
                         </div>

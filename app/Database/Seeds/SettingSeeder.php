@@ -52,8 +52,8 @@ class SettingSeeder extends Seeder
             ['principal', json_encode([
                 'name' => 'Dr. Sari Wijaya, M.Pd.',
                 'photo' => '/images/default-principal.jpg',
-                'role_title' => 'Kepala Sekolah',
-                'welcome_message' => 'Assalamu\'alaikum. Selamat datang di SekolahKu. Kami berharap situs ini membantu Bapak/Ibu mengenal madrasah kami lebih dekat: programnya, gurunya, dan kegiatannya. Mari bersama menemani tumbuh kembang putra-putri kita.',
+                'role' => 'Kepala Madrasah',
+                'quote' => 'Assalamu\'alaikum. Selamat datang di SekolahKu. Kami berharap situs ini membantu Bapak/Ibu mengenal madrasah kami lebih dekat: programnya, gurunya, dan kegiatannya. Mari bersama menemani tumbuh kembang putra-putri kita.',
                 'education' => 'S3 Pendidikan',
                 'years_of_service' => '10 Thn Mengabdi',
             ])],

@@ -6,6 +6,21 @@
 
 Format: [Keep a Changelog](https://keepachangelog.com/id/1.1.0/) · Versioning: [SemVer](https://semver.org/lang/id/)
 
+## [Unreleased] — Kustomisasi DCI #4: Sinkronisasi UX Admin (P1b) (2026-09-23)
+
+### Diperbaiki (Fixed)
+- **Mismatch key principal**: seeder memakai `role_title`/`welcome_message` tapi frontend & form admin membaca `role`/`quote` — sambutan kepala madrasah tidak pernah tampil di frontend. Diseragamkan ke `role`/`quote` (seeder + DB demo).
+- Fallback view `welcome_message` dipertahankan sementara agar aman untuk instalasi lama.
+
+### Diubah (Changed)
+- **Form section settings admin**: tambah field "Deskripsi Singkat" (key `desc`) di 14 section — operator kini bisa edit deskripsi yang tampil di bawah judul.
+- Label admin "Kepala Sekolah" → "Kepala Madrasah".
+- **Swatch tema admin** disesuaikan palet DCI: default kini solid hijau #1B5E43 (sebelumnya gradient jadul), green #065f46 → #1B5E43, urutan swatch dirotasi.
+
+### Catatan Teknis
+- Runtime Playwright: admin settings — 14 field desc, principal role/quote terisi benar, swatch default rgb(27,94,67); frontend — hero card "Kepala Madrasah" + sambutan Assalamu'alaikum tampil.
+- `php -l` bersih. Settings::save() tidak perlu diubah (JSON section_settings & principal disimpan apa adanya dari POST).
+
 ## [Unreleased] — Kustomisasi DCI #3: Copy Bernyawa + Motif Arabesque + Rhythm (2026-09-23)
 
 ### Ditambahkan (Added)
