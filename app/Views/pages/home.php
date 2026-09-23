@@ -217,7 +217,7 @@
       <div class="section-title">
         <span class="st-badge"><?= esc($tSs['title'] ?? 'Tenaga Pengajar') ?></span>
         <h2><?= esc($tSs['title'] ?? 'Guru') ?> <span class="text-gradient"><?= esc($tSs['subtitle'] ?? 'Berpengalaman') ?></span></h2>
-        <p><?= esc($tSs['subtitle'] ?? 'Dibimbing oleh tenaga pengajar profesional dan berpengalaman di bidangnya') ?></p>
+        <p><?= esc($tSs['desc'] ?? 'Dibimbing oleh tenaga pengajar profesional dan berpengalaman di bidangnya') ?></p>
       </div>
       <div class="carousel-wrap">
         <div class="carousel-track" id="teacherTrack">
@@ -268,7 +268,7 @@
       <div class="section-title">
         <span class="st-badge"><?= esc($achSs['title'] ?? 'Siswa Berprestasi') ?></span>
         <h2><?= esc($achSs['title'] ?? 'Prestasi') ?> <span class="text-gradient"><?= esc($achSs['subtitle'] ?? 'Siswa') ?></span></h2>
-        <p><?= esc($achSs['subtitle'] ?? 'Kebanggaan sekolah atas prestasi yang diraih siswa di berbagai bidang dan tingkatan') ?></p>
+        <p><?= esc($achSs['desc'] ?? 'Kebanggaan sekolah atas prestasi yang diraih siswa di berbagai bidang dan tingkatan') ?></p>
       </div>
       <div class="achievement-grid">
         <?php foreach($achievements as $ach): ?>
@@ -337,10 +337,10 @@
   <?php if(isset($news) && !empty($news)): ?>
   <section class="section" id="news" aria-label="Berita dan artikel">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title section-title--left">
         <span class="st-badge"><?= esc($ss['news']['title'] ?? 'Berita & Artikel') ?></span>
         <h2><?= esc($ss['news']['title'] ?? 'Berita') ?> <span class="text-gradient"><?= esc($ss['news']['subtitle'] ?? 'Terbaru') ?></span></h2>
-        <p><?= esc($ss['news']['subtitle'] ?? 'Informasi terkini seputar kegiatan dan prestasi di lingkungan sekolah') ?></p>
+        <p><?= esc($ss['news']['desc'] ?? 'Informasi terkini seputar kegiatan dan prestasi di lingkungan sekolah') ?></p>
       </div>
       <div class="news-grid">
         <?php foreach($news as $item): ?>
@@ -372,7 +372,7 @@
   <?php $showEvents = $ss['events']['show'] ?? 1; if(($showEvents || !isset($ss['events'])) && isset($events) && !empty($events)): ?>
   <section class="section bg-surface" id="events" aria-label="Agenda kegiatan">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title section-title--left">
         <span class="st-badge"><?= esc($ss['events']['title'] ?? 'Kegiatan Mendatang') ?></span>
         <h2>Agenda <span class="text-gradient"><?= esc($site_name) ?></span></h2>
         <p><?= esc($ss['events']['subtitle'] ?? 'Jadwal kegiatan dan acara mendatang di lingkungan sekolah') ?></p>
@@ -417,7 +417,7 @@
       <div class="section-title">
         <span class="st-badge"><?= esc($ss['gallery']['title'] ?? 'Dokumentasi') ?></span>
         <h2>Galeri <span class="text-gradient"><?= esc($ss['gallery']['subtitle'] ?? 'Sekolah') ?></span></h2>
-        <p><?= esc($ss['gallery']['subtitle'] ?? 'Dokumentasi kegiatan dan momen berharga di lingkungan sekolah') ?></p>
+        <p><?= esc($ss['gallery']['desc'] ?? 'Dokumentasi kegiatan dan momen berharga di lingkungan sekolah') ?></p>
       </div>
       <div class="gallery-grid">
         <?php foreach($galleries as $i => $g): ?>
@@ -438,7 +438,7 @@
       <div class="section-title">
         <span class="st-badge"><?= esc($ss['faq']['title'] ?? 'Tanya Jawab') ?></span>
         <h2>Pertanyaan <span class="text-gradient"><?= esc($ss['faq']['subtitle'] ?? 'Umum') ?></span></h2>
-        <p><?= esc($ss['faq']['subtitle'] ?? 'Informasi yang sering ditanyakan seputar ' . $site_name) ?></p>
+        <p><?= esc($ss['faq']['desc'] ?? 'Informasi yang sering ditanyakan seputar ' . $site_name) ?></p>
       </div>
       <div class="faq-list">
         <?php foreach($faq as $f): ?>

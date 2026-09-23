@@ -153,6 +153,34 @@ h1,h2,h3,h4,h5,h6 { font-family:var(--font); font-weight:700; line-height:1.2; }
 }
 .section-title p { color:var(--text-soft); font-size:0.95rem; }
 
+/* Motif arabesque: bintang 8 titik di antara dua garis emas */
+.section-title::after {
+  content:"";
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  margin:22px auto 0;
+  width:180px;
+  height:14px;
+  background:
+    linear-gradient(var(--accent), var(--accent)) left center / 62px 1px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) right center / 62px 1px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l1.8 4.6L18 4.8l-1.8 4.4L21 12l-4.8 2.8L18 19.2l-4.2-1.8L12 22l-1.8-4.6L6 19.2l1.8-4.4L3 12l4.8-2.8L6 4.8l4.2 1.8z' fill='none' stroke='%23B98A2F' stroke-width='1.4'/%3E%3C/svg%3E") center / 14px 14px no-repeat;
+  opacity:0.75;
+}
+/* Varian rata kiri: memecah repetisi rhythm homepage */
+.section-title--left { text-align:left; margin-left:0; }
+.section-title--left .st-badge { margin-bottom:14px; }
+.section-title--left::after {
+  margin-left:0;
+  justify-content:flex-start;
+  width:110px;
+  background:
+    linear-gradient(var(--accent), var(--accent)) left center / 62px 1px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l1.8 4.6L18 4.8l-1.8 4.4L21 12l-4.8 2.8L18 19.2l-4.2-1.8L12 22l-1.8-4.6L6 19.2l1.8-4.4L3 12l4.8-2.8L6 4.8l4.2 1.8z' fill='none' stroke='%23B98A2F' stroke-width='1.4'/%3E%3C/svg%3E") right center / 14px 14px no-repeat;
+}
+
 /* ===== BUTTONS ===== */
 .btn {
   display:inline-flex; align-items:center; gap:8px;

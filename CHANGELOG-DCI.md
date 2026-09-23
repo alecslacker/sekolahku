@@ -6,6 +6,26 @@
 
 Format: [Keep a Changelog](https://keepachangelog.com/id/1.1.0/) · Versioning: [SemVer](https://semver.org/lang/id/)
 
+## [Unreleased] — Kustomisasi DCI #3: Copy Bernyawa + Motif Arabesque + Rhythm (2026-09-23)
+
+### Ditambahkan (Added)
+- **Motif arabesque** bintang 8 titik (SVG data URI emas) sebagai pembatas `.section-title::after` — identitas islami halus tanpa gambar eksternal. Varian rata kiri `.section-title--left`.
+- **Key `desc`** di section_settings (news, events, gallery, faq, teachers, achievements) — deskripsi section kini terpisah dari subtitle, bisa diedit operator.
+
+### Diubah (Changed)
+- **Copy bernyawa** (seeder + DB demo): hero subtitle, tombol hero, sambutan kepala madrasah ("Assalamu'alaikum..."), tagline "Madrasah untuk Buah Hati Anda", footer description, 13 subtitle section — semua bicara ke orang tua, bukan kalimat pemasaran generik.
+- **Rhythm homepage**: section Berita rata kiri (`section-title--left`) memecah repetisi 10 judul centered.
+- Icon program unggulan `fa-gem` → `fa-seedling`.
+- `principal.role_title` → "Kepala Madrasah".
+
+### Diperbaiki (Fixed)
+- **Subtitle ganda**: 6 section (news, teachers, achievements, gallery, faq) menampilkan `subtitle` dua kali (di H2 dan paragraf) — paragraf kini membaca key `desc`.
+- Spasi hilang di footer_description ("SekolahKu.Informasi").
+
+### Catatan Teknis
+- Runtime Playwright: 10 section-title motif aktif, 0 dead link, tagline baru di title, news rata kiri; events hidden (DB demo tanpa agenda — perilaku benar).
+- style.min.css diregenerasi (49KB).
+
 ## [Unreleased] — Kustomisasi DCI #2: Identitas Visual P1 (2026-09-23)
 
 Arah: DESIGN.md (islami hangat-ramah, ENERGY 1 / RHYTHM 2 / MOTION 1). Target kontras AAA.
