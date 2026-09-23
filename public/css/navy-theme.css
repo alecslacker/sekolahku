@@ -1,46 +1,41 @@
-/* ============================================================
-   NAVY THEME — SMK, Sekolah Teknis
-   Gunakan setelah style.css di halaman HTML:
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/navy-theme.css">
-   ============================================================ */
+/* Tema navy — kerangka DCI (warna inti bervariasi, aksen emas tetap, DESIGN.md) */
 
 :root {
-  --primary: #1e3a5f;
-  --primary-dark: #0f1d31;
-  --primary-light: #3b82f6;
-  --accent: #06b6d4;
-  --accent-dark: #0891b2;
-  --accent-glow: rgba(6, 182, 212, 0.12);
-  --warm: #f59e0b;
+  --primary: #1F3A5F;
+  --primary-dark: #142A47;
+  --primary-light: #3A5680;
+  --accent: #B98A2F;
+  --accent-dark: #8C6A22;
+  --accent-glow: rgba(185, 138, 47, 0.12);
+  --warm: #B98A2F;
   --surface: #ffffff;
-  --bg: #eff6ff;
-  --text: #1e293b;
-  --text-soft: #64748b;
-  --text-muted: #94a3b8;
-  --border: #bfdbfe;
-  --shadow-xl: 0 20px 60px rgba(30,58,95,0.12);
-  --nav-hover: rgba(30,58,95,.04);
-  --nav-active: rgba(30,58,95,.06);
-  --hero-end: #1e3a8a;
+  --bg: #F1F4F8;
+  --text: #1F2937;
+  --text-soft: #4B5563;
+  --text-muted: #6B7280;
+  --border: #E5E2DA;
+  --shadow-xl: 0 20px 60px #1f3a5f1F;
+  --nav-hover: #1f3a5f0A;
+  --nav-active: #1f3a5f0F;
+  --hero-end: #142A47;
 }
 
 [data-theme="dark"] {
-  --primary: #60a5fa;
-  --primary-dark: #1e3a5f;
-  --primary-light: #93c5fd;
-  --accent: #22d3ee;
-  --accent-dark: #06b6d4;
-  --accent-glow: rgba(34,211,238,.15);
-  --warm: #fbbf24;
+  --primary: #8FB4E8;
+  --primary-dark: #12233D;
+  --primary-light: #8FB4E8;
+  --accent: #E9C46A;
+  --accent-dark: #B98A2F;
+  --accent-glow: rgba(233,196,106,.12);
+  --warm: #E9C46A;
   --surface: #1e293b;
-  --bg: #0f172a;
+  --bg: #12233D;
   --text: #e2e8f0;
   --text-soft: #94a3b8;
-  --text-muted: #64748b;
+  --text-muted: #94a3b8;
   --border: #334155;
   --shadow-xl: 0 20px 60px rgba(0,0,0,0.4);
-  --nav-hover: rgba(96,165,250,.08);
-  --nav-active: rgba(96,165,250,.12);
-  --hero-end: #1e3a8a;
+  --nav-hover: #8fb4e814;
+  --nav-active: #8fb4e81F;
+  --hero-end: #12233D;
 }

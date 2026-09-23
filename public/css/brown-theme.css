@@ -1,46 +1,41 @@
-/* ============================================================
-   BROWN THEME — Pondok Pesantren Tradisional, Madrasah Diniyah
-   Gunakan setelah style.css di halaman HTML:
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/brown-theme.css">
-   ============================================================ */
+/* Tema brown — kerangka DCI (warna inti bervariasi, aksen emas tetap, DESIGN.md) */
 
 :root {
-  --primary: #78350f;
-  --primary-dark: #451a03;
-  --primary-light: #b45309;
-  --accent: #f59e0b;
-  --accent-dark: #d97706;
-  --accent-glow: rgba(245, 158, 11, 0.12);
-  --warm: #ef4444;
+  --primary: #5C4033;
+  --primary-dark: #3E2A20;
+  --primary-light: #7D5C4B;
+  --accent: #B98A2F;
+  --accent-dark: #8C6A22;
+  --accent-glow: rgba(185, 138, 47, 0.12);
+  --warm: #B98A2F;
   --surface: #ffffff;
-  --bg: #fffbeb;
-  --text: #1e293b;
-  --text-soft: #64748b;
-  --text-muted: #94a3b8;
-  --border: #fde68a;
-  --shadow-xl: 0 20px 60px rgba(120,53,15,0.12);
-  --nav-hover: rgba(120,53,15,.04);
-  --nav-active: rgba(120,53,15,.06);
-  --hero-end: #92400e;
+  --bg: #F7F4F0;
+  --text: #1F2937;
+  --text-soft: #4B5563;
+  --text-muted: #6B7280;
+  --border: #E5E2DA;
+  --shadow-xl: 0 20px 60px #5c40331F;
+  --nav-hover: #5c40330A;
+  --nav-active: #5c40330F;
+  --hero-end: #3E2A20;
 }
 
 [data-theme="dark"] {
-  --primary: #fbbf24;
-  --primary-dark: #78350f;
-  --primary-light: #fcd34d;
-  --accent: #fbbf24;
-  --accent-dark: #f59e0b;
-  --accent-glow: rgba(251,191,36,.15);
-  --warm: #f87171;
+  --primary: #D4A889;
+  --primary-dark: #33221A;
+  --primary-light: #D4A889;
+  --accent: #E9C46A;
+  --accent-dark: #B98A2F;
+  --accent-glow: rgba(233,196,106,.12);
+  --warm: #E9C46A;
   --surface: #1e293b;
-  --bg: #0f172a;
+  --bg: #33221A;
   --text: #e2e8f0;
   --text-soft: #94a3b8;
-  --text-muted: #64748b;
+  --text-muted: #94a3b8;
   --border: #334155;
   --shadow-xl: 0 20px 60px rgba(0,0,0,0.4);
-  --nav-hover: rgba(251,191,36,.08);
-  --nav-active: rgba(251,191,36,.12);
-  --hero-end: #92400e;
+  --nav-hover: #d4a88914;
+  --nav-active: #d4a8891F;
+  --hero-end: #33221A;
 }

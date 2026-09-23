@@ -1,49 +1,41 @@
-/* ============================================================
-   GRAY THEME — SMA
-   Gunakan setelah style.css di halaman HTML:
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/gray-theme.css">
-   ============================================================ */
+/* Tema gray — kerangka DCI (warna inti bervariasi, aksen emas tetap, DESIGN.md) */
 
 :root {
-  --primary: #475569;
-  --primary-dark: #1e293b;
-  --primary-light: #94a3b8;
-  --accent: #6366f1;
-  --accent-dark: #4f46e5;
-  --accent-glow: rgba(99, 102, 241, 0.12);
-  --warm: #f59e0b;
+  --primary: #3F4A54;
+  --primary-dark: #2A333B;
+  --primary-light: #5C6B77;
+  --accent: #B98A2F;
+  --accent-dark: #8C6A22;
+  --accent-glow: rgba(185, 138, 47, 0.12);
+  --warm: #B98A2F;
   --surface: #ffffff;
-  --bg: #f8fafc;
-  --text: #1e293b;
-  --text-soft: #64748b;
-  --text-muted: #94a3b8;
-  --border: #e2e8f0;
-  --shadow-xl: 0 20px 60px rgba(71,85,105,0.12);
-  --nav-hover: rgba(71,85,105,.04);
-  --nav-active: rgba(71,85,105,.06);
-  --hero-end: #334155;
+  --bg: #F4F5F6;
+  --text: #1F2937;
+  --text-soft: #4B5563;
+  --text-muted: #6B7280;
+  --border: #E5E2DA;
+  --shadow-xl: 0 20px 60px #3f4a541F;
+  --nav-hover: #3f4a540A;
+  --nav-active: #3f4a540F;
+  --hero-end: #2A333B;
 }
 
 [data-theme="dark"] {
-  --primary: #94a3b8;
-  --primary-dark: #475569;
-  --primary-light: #cbd5e1;
-  --accent: #818cf8;
-  --accent-dark: #6366f1;
-  --accent-glow: rgba(129,140,248,.15);
-  --warm: #fbbf24;
+  --primary: #A8B6C2;
+  --primary-dark: #232B32;
+  --primary-light: #A8B6C2;
+  --accent: #E9C46A;
+  --accent-dark: #B98A2F;
+  --accent-glow: rgba(233,196,106,.12);
+  --warm: #E9C46A;
   --surface: #1e293b;
-  --bg: #0f172a;
+  --bg: #232B32;
   --text: #e2e8f0;
   --text-soft: #94a3b8;
-  --text-muted: #64748b;
+  --text-muted: #94a3b8;
   --border: #334155;
   --shadow-xl: 0 20px 60px rgba(0,0,0,0.4);
-  --nav-hover: rgba(148,163,184,.08);
-  --nav-active: rgba(148,163,184,.12);
-  --hero-end: #334155;
+  --nav-hover: #a8b6c214;
+  --nav-active: #a8b6c21F;
+  --hero-end: #232B32;
 }
-
-.hero .hc-role { color: #a5b4fc; }
-[data-theme="dark"] .hero .hc-role { color: #c7d2fe; }

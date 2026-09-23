@@ -6,6 +6,30 @@
 
 Format: [Keep a Changelog](https://keepachangelog.com/id/1.1.0/) · Versioning: [SemVer](https://semver.org/lang/id/)
 
+## [Unreleased] — Kustomisasi DCI #2: Identitas Visual P1 (2026-09-23)
+
+Arah: DESIGN.md (islami hangat-ramah, ENERGY 1 / RHYTHM 2 / MOTION 1). Target kontras AAA.
+
+### Ditambahkan (Added)
+- **Font self-host** `public/fonts/`: Source Serif 4 (judul, serif editorial) + Public Sans (body), subset latin woff2 (~150KB total), `@font-face` di style.css. Google Fonts CDN dihapus dari header (hemat request eksternal, tahan internet lambat).
+- **Cache-buster CSS**: `style.min.css?v={filemtime}` di header.php — mencegah cache basi setelah update tema.
+- **DESIGN.md**: direction file resmi semua keputusan visual P1.
+
+### Diubah (Changed)
+- **Palet baru**: primary hijau madrasah `#1B5E43`, aksen emas `#B98A2F` (gelap `#8C6A22` untuk teks, 10.77:1), bg putih gading `#FAF9F5`, teks `#1F2937`/`#4B5563` (7.17-13.93:1, AAA). Dark mode: hijau mint `#6EE7B0` + emas terang `#E9C46A` (7.72:1 di atas `#14382A`).
+- **9 tema madrasah** (`*-theme.css`) diregenerasi dengan kerangka DCI: warna inti bervariasi per tema (semua lolos 6.7-8.6:1), aksen emas tetap konsisten antar-tema.
+
+### Dihapus (Removed)
+- `text-gradient` pada H2 (kini warna solid aksen gelap).
+- 4 blob dekoratif hero (`hero-shape`) + animasi float-nya.
+- Radial orb background `.bg-alt` (kini flat putih gading).
+- Gradient pada nav underline, tombol SPMB, st-badge, section divider, footer credit line (solid semua; gradient tersisa hanya nuansa hijau di hero/page-banner/tombol primary).
+
+### Catatan Teknis
+- Kontras diverifikasi contrast-check.py: 8 pasangan light + 4 dark, semua PASS (target ≥4.5, hasil 6.7-13.9).
+- Runtime Playwright: palet + font aktif, dark mode benar (hijau mint/emas), hero-shape display:none, overflow-x mobile 0px, php -l bersih.
+- File min.css diregenerasi (48.9KB).
+
 ## [Unreleased] — Kustomisasi DCI #1 (2026-09-22)
 
 Sesi: Full audit AI slop + perbaikan P0 (Hard Gate) + rebranding footer.

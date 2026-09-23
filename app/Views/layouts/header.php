@@ -17,14 +17,10 @@
   <meta name="twitter:description" content="<?= esc($site_description ?? $site_tagline) ?>">
   <meta name="twitter:image" content="<?= base_url('assets/img/og-default.jpg') ?>">
   <link rel="canonical" href="<?= current_url() ?>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"></noscript>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
-  <link rel="stylesheet" href="<?= base_url('css/style.min.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('css/style.min.css') ?>?v=<?= filemtime(FCPATH . 'css/style.min.css') ?>">
   <?php if (($theme_color ?? 'default') !== 'default'): $_themeFile = FCPATH . 'css/' . $theme_color . '-theme.css'; if (file_exists($_themeFile)): ?><style><?= file_get_contents($_themeFile) ?></style><?php endif; endif; ?>
   <script type="application/ld+json">
   {

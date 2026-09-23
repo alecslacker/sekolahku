@@ -1,46 +1,41 @@
-/* ============================================================
-   PINK THEME — TK/PAUD, Sekolah Perempuan
-   Gunakan setelah style.css di halaman HTML:
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/pink-theme.css">
-   ============================================================ */
+/* Tema pink — kerangka DCI (warna inti bervariasi, aksen emas tetap, DESIGN.md) */
 
 :root {
-  --primary: #9f1239;
-  --primary-dark: #6b0f24;
-  --primary-light: #e11d48;
-  --accent: #ec4899;
-  --accent-dark: #db2777;
-  --accent-glow: rgba(236, 72, 153, 0.12);
-  --warm: #f59e0b;
+  --primary: #8A3B5C;
+  --primary-dark: #66283F;
+  --primary-light: #AB5B7C;
+  --accent: #B98A2F;
+  --accent-dark: #8C6A22;
+  --accent-glow: rgba(185, 138, 47, 0.12);
+  --warm: #B98A2F;
   --surface: #ffffff;
-  --bg: #fff1f2;
-  --text: #1e293b;
-  --text-soft: #64748b;
-  --text-muted: #94a3b8;
-  --border: #fecdd3;
-  --shadow-xl: 0 20px 60px rgba(159,18,57,0.12);
-  --nav-hover: rgba(159,18,57,.04);
-  --nav-active: rgba(159,18,57,.06);
-  --hero-end: #be123c;
+  --bg: #F9F3F6;
+  --text: #1F2937;
+  --text-soft: #4B5563;
+  --text-muted: #6B7280;
+  --border: #E5E2DA;
+  --shadow-xl: 0 20px 60px #8a3b5c1F;
+  --nav-hover: #8a3b5c0A;
+  --nav-active: #8a3b5c0F;
+  --hero-end: #66283F;
 }
 
 [data-theme="dark"] {
-  --primary: #fb7185;
-  --primary-dark: #9f1239;
-  --primary-light: #fda4af;
-  --accent: #f472b6;
-  --accent-dark: #ec4899;
-  --accent-glow: rgba(244,114,182,.15);
-  --warm: #fbbf24;
+  --primary: #E9A3C0;
+  --primary-dark: #55202F;
+  --primary-light: #E9A3C0;
+  --accent: #E9C46A;
+  --accent-dark: #B98A2F;
+  --accent-glow: rgba(233,196,106,.12);
+  --warm: #E9C46A;
   --surface: #1e293b;
-  --bg: #0f172a;
+  --bg: #55202F;
   --text: #e2e8f0;
   --text-soft: #94a3b8;
-  --text-muted: #64748b;
+  --text-muted: #94a3b8;
   --border: #334155;
   --shadow-xl: 0 20px 60px rgba(0,0,0,0.4);
-  --nav-hover: rgba(251,113,133,.08);
-  --nav-active: rgba(251,113,133,.12);
-  --hero-end: #be123c;
+  --nav-hover: #e9a3c014;
+  --nav-active: #e9a3c01F;
+  --hero-end: #55202F;
 }

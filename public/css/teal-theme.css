@@ -1,46 +1,41 @@
-/* ============================================================
-   TEAL THEME — Sekolah Alam, Environmental
-   Gunakan setelah style.css di halaman HTML:
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/teal-theme.css">
-   ============================================================ */
+/* Tema teal — kerangka DCI (warna inti bervariasi, aksen emas tetap, DESIGN.md) */
 
 :root {
-  --primary: #115e59;
-  --primary-dark: #042f2e;
-  --primary-light: #14b8a6;
-  --accent: #22d3ee;
-  --accent-dark: #06b6d4;
-  --accent-glow: rgba(34, 211, 238, 0.12);
-  --warm: #f59e0b;
+  --primary: #0F5E5E;
+  --primary-dark: #094040;
+  --primary-light: #2A7D7D;
+  --accent: #B98A2F;
+  --accent-dark: #8C6A22;
+  --accent-glow: rgba(185, 138, 47, 0.12);
+  --warm: #B98A2F;
   --surface: #ffffff;
-  --bg: #f0fdfa;
-  --text: #1e293b;
-  --text-soft: #64748b;
-  --text-muted: #94a3b8;
-  --border: #99f6e4;
-  --shadow-xl: 0 20px 60px rgba(17,94,89,0.12);
-  --nav-hover: rgba(17,94,89,.04);
-  --nav-active: rgba(17,94,89,.06);
-  --hero-end: #0f766e;
+  --bg: #EFF7F7;
+  --text: #1F2937;
+  --text-soft: #4B5563;
+  --text-muted: #6B7280;
+  --border: #E5E2DA;
+  --shadow-xl: 0 20px 60px #0f5e5e1F;
+  --nav-hover: #0f5e5e0A;
+  --nav-active: #0f5e5e0F;
+  --hero-end: #094040;
 }
 
 [data-theme="dark"] {
-  --primary: #5eead4;
-  --primary-dark: #115e59;
-  --primary-light: #99f6e4;
-  --accent: #67e8f9;
-  --accent-dark: #22d3ee;
-  --accent-glow: rgba(103,232,249,.15);
-  --warm: #fbbf24;
+  --primary: #6ED4D4;
+  --primary-dark: #073434;
+  --primary-light: #6ED4D4;
+  --accent: #E9C46A;
+  --accent-dark: #B98A2F;
+  --accent-glow: rgba(233,196,106,.12);
+  --warm: #E9C46A;
   --surface: #1e293b;
-  --bg: #0f172a;
+  --bg: #073434;
   --text: #e2e8f0;
   --text-soft: #94a3b8;
-  --text-muted: #64748b;
+  --text-muted: #94a3b8;
   --border: #334155;
   --shadow-xl: 0 20px 60px rgba(0,0,0,0.4);
-  --nav-hover: rgba(94,234,212,.08);
-  --nav-active: rgba(94,234,212,.12);
-  --hero-end: #0f766e;
+  --nav-hover: #6ed4d414;
+  --nav-active: #6ed4d41F;
+  --hero-end: #073434;
 }

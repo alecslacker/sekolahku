@@ -1,46 +1,41 @@
-/* ============================================================
-   PURPLE THEME — SMK, Kursus, Universitas
-   Gunakan setelah style.css di halaman HTML:
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/purple-theme.css">
-   ============================================================ */
+/* Tema purple — kerangka DCI (warna inti bervariasi, aksen emas tetap, DESIGN.md) */
 
 :root {
-  --primary: #5b21b6;
-  --primary-dark: #3b0764;
-  --primary-light: #8b5cf6;
-  --accent: #d946ef;
-  --accent-dark: #c026d3;
-  --accent-glow: rgba(217, 70, 239, 0.12);
-  --warm: #f59e0b;
+  --primary: #4F3A78;
+  --primary-dark: #38285A;
+  --primary-light: #6C569A;
+  --accent: #B98A2F;
+  --accent-dark: #8C6A22;
+  --accent-glow: rgba(185, 138, 47, 0.12);
+  --warm: #B98A2F;
   --surface: #ffffff;
-  --bg: #faf5ff;
-  --text: #1e293b;
-  --text-soft: #64748b;
-  --text-muted: #94a3b8;
-  --border: #e9d5ff;
-  --shadow-xl: 0 20px 60px rgba(91,33,182,0.12);
-  --nav-hover: rgba(91,33,182,.04);
-  --nav-active: rgba(91,33,182,.06);
-  --hero-end: #6d28d9;
+  --bg: #F5F3F9;
+  --text: #1F2937;
+  --text-soft: #4B5563;
+  --text-muted: #6B7280;
+  --border: #E5E2DA;
+  --shadow-xl: 0 20px 60px #4f3a781F;
+  --nav-hover: #4f3a780A;
+  --nav-active: #4f3a780F;
+  --hero-end: #38285A;
 }
 
 [data-theme="dark"] {
-  --primary: #a78bfa;
-  --primary-dark: #5b21b6;
-  --primary-light: #c4b5fd;
-  --accent: #e879f9;
-  --accent-dark: #d946ef;
-  --accent-glow: rgba(232,121,249,.15);
-  --warm: #fbbf24;
+  --primary: #B9A5E6;
+  --primary-dark: #2E2150;
+  --primary-light: #B9A5E6;
+  --accent: #E9C46A;
+  --accent-dark: #B98A2F;
+  --accent-glow: rgba(233,196,106,.12);
+  --warm: #E9C46A;
   --surface: #1e293b;
-  --bg: #0f172a;
+  --bg: #2E2150;
   --text: #e2e8f0;
   --text-soft: #94a3b8;
-  --text-muted: #64748b;
+  --text-muted: #94a3b8;
   --border: #334155;
   --shadow-xl: 0 20px 60px rgba(0,0,0,0.4);
-  --nav-hover: rgba(167,139,250,.08);
-  --nav-active: rgba(167,139,250,.12);
-  --hero-end: #6d28d9;
+  --nav-hover: #b9a5e614;
+  --nav-active: #b9a5e61F;
+  --hero-end: #2E2150;
 }
