@@ -6,6 +6,19 @@
 
 Format: [Keep a Changelog](https://keepachangelog.com/id/1.1.0/) · Versioning: [SemVer](https://semver.org/lang/id/)
 
+## [Unreleased] — Kustomisasi DCI #5: Rebrand Footer Admin + Seeder Produksi (2026-09-23)
+
+### Ditambahkan (Added)
+- **ProductionSeeder**: seeder khusus instalasi produksi (hanya users + settings + menu, tanpa data contoh). Jalankan `php spark db:seed ProductionSeeder`. DatabaseSeeder tetap untuk dev/demo.
+
+### Diubah (Changed)
+- **Footer admin** ([layout.php](f:/laragon/www/sekolahku/app/Views/admin/layout.php)): kini center 2 baris — "© {tahun} {nama_sekolah}." di atas, "Duta Corpora Indonesia" di bawah. Nama sekolah dinamis dari settings. Atribusi "CMS by sekolahku.web.id" dihapus dari footer admin.
+- **Label "Kepala Sekolah" dipertahankan** (revert Kepala Madrasah) — CMS multi jenjang, bukan khusus madrasah. Berlaku di form admin, seeder, dan DB demo.
+
+### Catatan Teknis
+- Runtime Playwright: footer admin "© 2026 SekolahKu. | Duta Corpora Indonesia" center, role principal "Kepala Sekolah".
+- Security: password default UserSeeder "12345" ditandai WAJIB ganti di docblock ProductionSeeder.
+
 ## [Unreleased] — Kustomisasi DCI #4: Sinkronisasi UX Admin (P1b) (2026-09-23)
 
 ### Diperbaiki (Fixed)

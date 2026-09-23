@@ -6,6 +6,10 @@ use CodeIgniter\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
+    /**
+     * Seeder lengkap untuk development/demo (data contoh semua modul).
+     * Untuk instalasi produksi gunakan: php spark db:seed ProductionSeeder
+     */
     public function run()
     {
         $this->call('App\Database\Seeds\UserSeeder');

@@ -155,9 +155,9 @@
             <?= $this->renderSection('content') ?>
         </main>
         <footer class="footer border-top px-4 py-3 text-body-tertiary small bg-white">
-            <div class="d-flex justify-content-between w-100">
-                <span>&copy; <?= date('Y') ?> CMS Sekolahku <?= APP_VERSION ?>. All rights reserved.</span>
-                <span>CMS by <a href="https://sekolahku.web.id" target="_blank" class="text-decoration-none fw-medium" style="color:#6366f1">sekolahku.web.id</a></span>
+            <div class="text-center w-100">
+                <div>&copy; <?= date('Y') ?> <?= esc($site_name ?? 'Nama Sekolah') ?>.</div>
+                <div>Duta Corpora Indonesia</div>
             </div>
         </footer>
     </div>

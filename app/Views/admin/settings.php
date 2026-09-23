@@ -253,7 +253,7 @@
             <?php $principalData = !empty($settings['principal']) ? json_decode($settings['principal'], true) : []; ?>
             <div class="card shadow-sm border-0 rounded-3 mb-4">
                 <div class="card-header bg-transparent border-bottom-0 py-3 d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseKepsek" role="button">
-                    <h6 class="mb-0"><i class="fas fa-user-tie me-2 text-primary"></i>Kepala Madrasah</h6>
+                    <h6 class="mb-0"><i class="fas fa-user-tie me-2 text-primary"></i>Kepala Sekolah</h6>
                     <i class="fas fa-chevron-down fa-xs text-body-tertiary collapse-icon"></i>
                 </div>
                 <div class="collapse" id="collapseKepsek">
@@ -276,11 +276,11 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label small fw-medium">Jabatan</label>
-                            <input type="text" name="principal[role]" class="form-control" value="<?= $principalData['role'] ?? '' ?>" placeholder="Mis. Kepala Madrasah">
+                            <input type="text" name="principal[role]" class="form-control" value="<?= $principalData['role'] ?? '' ?>" placeholder="Mis. Kepala Sekolah">
                         </div>
                         <div class="mb-3">
                             <label class="form-label small fw-medium">Sambutan / Kutipan</label>
-                            <textarea name="principal[quote]" class="form-control" rows="3" placeholder="Sambutan atau kutipan dari kepala madrasah..."><?= $principalData['quote'] ?? $principalData['welcome_message'] ?? '' ?></textarea>
+                            <textarea name="principal[quote]" class="form-control" rows="3" placeholder="Sambutan atau kutipan dari kepala sekolah..."><?= $principalData['quote'] ?? $principalData['welcome_message'] ?? '' ?></textarea>
                         </div>
                     </div>
                 </div>
