@@ -1,6 +1,6 @@
-# Website Madrasah — CMS Sekolahku (Kustomisasi Duta Corpora Indonesia)
+# Website Sekolah — CMS Sekolahku (Kustomisasi Duta Corpora Indonesia)
 
-CMS Sekolahku v3.1.2 yang dikustomisasi oleh **Duta Corpora Indonesia** untuk website madrasah: nuansa islami-pendidikan, mobile-first, aksesibilitas tinggi, dan tema warna per madrasah (9 tema). Konten dikelola sendiri oleh operator madrasah melalui panel admin.
+CMS Sekolahku v3.1.2 yang dikustomisasi oleh **Duta Corpora Indonesia** untuk website sekolah (multi jenjang: SD/SMP/SMA/MI/MTs/MA dan lainnya): nuansa pendidikan yang hangat, mobile-first, aksesibilitas tinggi, dan tema warna per sekolah (9 tema). Konten dikelola sendiri oleh operator sekolah melalui panel admin.
 
 > Daftar perubahan custom: [CHANGELOG-DCI.md](CHANGELOG-DCI.md)
 

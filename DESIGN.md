@@ -1,11 +1,11 @@
-# DESIGN.md — Website Madrasah (Kustomisasi DCI atas CMS Sekolahku)
+# DESIGN.md — Website Sekolah (Kustomisasi DCI atas CMS Sekolahku)
 
 > Direction file antislop (R-37). Sumber arah: keputusan Mas Wondho, 2026-09-22.
 > File ini adalah KEBENARAN untuk semua keputusan visual P1. Konflik dengan selera default agent = agent kalah.
 
 ## Identitas
 
-Madrasah yang hangat dan dipercaya: website yang terasa seperti madrasahnya sendiri, bukan template sekolah generik. Orang tua (mayoritas pengakses via HP) datang mencari informasi: jadwal, berita, kontak, pendaftaran. Desain melayani itu, tidak berpamer.
+Sekolah yang hangat dan dipercaya: website yang terasa seperti sekolahnya sendiri, bukan template sekolah generik. Orang tua (mayoritas pengakses via HP) datang mencari informasi: jadwal, berita, kontak, pendaftaran. Desain melayani itu, tidak berpamer.
 
 Karakter: **islami hangat-ramah** — hijau lembut, putih bersih, aksen islami SATU motif saja (geometri arabesque halus), bukan ornamen di mana-mana. Terasa religius tanpa berat, bersahabat tanpa kekanakan.
 
@@ -13,7 +13,7 @@ Karakter: **islami hangat-ramah** — hijau lembut, putih bersih, aksen islami S
 
 | Peran | Warna | Catatan |
 |---|---|---|
-| Inti 1 (identitas) | Hijau madrasah `#1B5E43` (dark green lembut) | Header, heading, link aktif |
+| Inti 1 (identitas) | Hijau sekolah `#1B5E43` (dark green lembut) | Header, heading, link aktif |
 | Inti 2 (dasar) | Putih gading `#FAF9F5` + putih `#FFFFFF` | Background section selang-seling |
 | Aksen | Emas `#B98A2F` | Dosis rendah: 1-2 titik per layar (CTA utama, garis pembatas motif) |
 | Netral teks | `#1F2937` (teks), `#4B5563` (sekunder) | Kontras AAA di atas putih gading |
@@ -23,7 +23,7 @@ Aturan:
 - `text-gradient` pada H2 dihapus semua.
 - Radial orb background body dihapus.
 - Neutral (putih/hitam/abu) tidak dihitung palet.
-- 9 tema madrasah = variasi "Inti 1" saja (hijau→biru/navy/dll sesuai tema), emas aksen tetap.
+- 9 tema sekolah = variasi "Inti 1" saja (hijau→biru/navy/dll sesuai tema), emas aksen tetap.
 
 ## Tipografi
 

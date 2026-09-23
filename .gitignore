@@ -16,7 +16,7 @@ graphify-out/
 writable/
 logs/
 
-# Upload user (foto konten madrasah)
+# Upload user (foto konten sekolah)
 public/uploads/about/
 public/uploads/principal/
 public/uploads/teachers/

@@ -12,7 +12,7 @@ class SettingSeeder extends Seeder
         $settings = [
             // Site identity
             ['site_name', 'SekolahKu'],
-            ['site_tagline', 'Madrasah untuk Buah Hati Anda'],
+            ['site_tagline', 'Sekolah untuk Buah Hati Anda'],
             ['site_description', 'Situs resmi SekolahKu: informasi program, guru, kegiatan, dan pendaftaran untuk Bapak/Ibu orang tua.'],
             ['site_logo_text', 'SekolahKu'],
             ['site_logo_icon', 'graduation-cap'],
@@ -38,8 +38,8 @@ class SettingSeeder extends Seeder
             // Hero section
             ['hero_badge', ''],
             ['hero_title', 'Selamat Datang di SekolahKu'],
-            ['hero_subtitle', 'Madrasah untuk buah hati Anda: belajar dengan hati, tumbuh dengan iman, siap menghadapi masa depan.'],
-            ['hero_btn_primary_text', 'Kenali Madrasah Kami'],
+            ['hero_subtitle', 'Sekolah untuk buah hati Anda: belajar dengan hati, tumbuh dengan iman, siap menghadapi masa depan.'],
+            ['hero_btn_primary_text', 'Kenali Sekolah Kami'],
             ['hero_btn_primary_url', '#profile'],
             ['hero_btn_secondary_text', 'Sampaikan Pertanyaan'],
             ['hero_btn_secondary_url', '#contact'],
@@ -53,7 +53,7 @@ class SettingSeeder extends Seeder
                 'name' => 'Dr. Sari Wijaya, M.Pd.',
                 'photo' => '/images/default-principal.jpg',
                 'role' => 'Kepala Sekolah',
-                'quote' => 'Assalamu\'alaikum. Selamat datang di SekolahKu. Kami berharap situs ini membantu Bapak/Ibu mengenal madrasah kami lebih dekat: programnya, gurunya, dan kegiatannya. Mari bersama menemani tumbuh kembang putra-putri kita.',
+                'quote' => 'Assalamu\'alaikum. Selamat datang di SekolahKu. Kami berharap situs ini membantu Bapak/Ibu mengenal sekolah kami lebih dekat: programnya, gurunya, dan kegiatannya. Mari bersama menemani tumbuh kembang putra-putri kita.',
                 'education' => 'S3 Pendidikan',
                 'years_of_service' => '10 Thn Mengabdi',
             ])],
@@ -62,7 +62,7 @@ class SettingSeeder extends Seeder
             ['about', json_encode([
                 'image' => 'https://placehold.co/600x400/0c4a6e/ffffff?text=SekolahKu',
                 'content_title' => 'Belajar dengan Hati, Tumbuh dengan Iman',
-                'content_1' => 'SekolahKu adalah madrasah yang menempatkan akhlak dan ilmu berjalan bersama. Anak-anak belajar dalam suasana hangat, dekat dengan guru, dan dekat dengan nilai-nilai agama.',
+                'content_1' => 'SekolahKu adalah sekolah yang menempatkan akhlak dan ilmu berjalan bersama. Anak-anak belajar dalam suasana hangat, dekat dengan guru, dan dekat dengan nilai-nilai agama.',
                 'content_2' => 'Kami percaya setiap anak membawa potensinya sendiri. Tugas kami merawatnya: menguatkan landasan iman, membuka wawasan ilmu, dan menemani langkahnya satu per satu.',
                 'accreditation' => '',
                 'accreditation_label' => 'Standar Nasional',
@@ -71,15 +71,15 @@ class SettingSeeder extends Seeder
 
             // Section settings (JSON)
             ['section_settings', json_encode([
-                'hero' => ['title' => 'Selamat Datang di SekolahKu', 'subtitle' => 'Madrasah untuk buah hati Anda', 'icon' => 'fa-school', 'show' => true],
+                'hero' => ['title' => 'Selamat Datang di SekolahKu', 'subtitle' => 'Sekolah untuk buah hati Anda', 'icon' => 'fa-school', 'show' => true],
                 'profile' => ['title' => 'Profil Sekolah', 'subtitle' => 'Visi, misi, dan cara kami mendidik', 'icon' => 'fa-building-columns', 'show' => true],
                 'programs' => ['title' => 'Program Unggulan', 'subtitle' => 'Apa yang anak Anda dapatkan di sini', 'icon' => 'fa-seedling', 'show' => true],
                 'extracurriculars' => ['title' => 'Ekstrakurikuler', 'subtitle' => 'Minat dan bakat anak dirawat di luar jam pelajaran', 'icon' => 'fa-futbol', 'show' => true],
                 'teachers' => ['title' => 'Tenaga Pengajar', 'subtitle' => 'Guru-guru yang menemani anak Anda setiap hari', 'desc' => 'Dibimbing guru profesional yang mengajar dengan hati', 'icon' => 'fa-chalkboard-user', 'show' => true],
                 'achievements' => ['title' => 'Prestasi Siswa', 'subtitle' => 'Kebanggaan yang diraih bersama', 'desc' => 'Prestasi anak-anak di berbagai bidang dan tingkatan', 'icon' => 'fa-trophy', 'show' => true],
                 'testimonials' => ['title' => 'Testimoni', 'subtitle' => 'Apa kata orang tua dan alumni', 'icon' => 'fa-comment', 'show' => true],
-                'news' => ['title' => 'Berita & Artikel', 'subtitle' => 'Kabar terbaru dari madrasah', 'desc' => 'Dokumentasi kegiatan dan kabar terkini dari madrasah', 'icon' => 'fa-newspaper', 'show' => true],
-                'events' => ['title' => 'Agenda & Kegiatan', 'subtitle' => 'Catat tanggalnya, Bapak/Ibu', 'desc' => 'Jadwal kegiatan dan acara mendatang di madrasah', 'icon' => 'fa-calendar-days', 'show' => true],
+                'news' => ['title' => 'Berita & Artikel', 'subtitle' => 'Kabar terbaru dari sekolah', 'desc' => 'Dokumentasi kegiatan dan kabar terkini dari sekolah', 'icon' => 'fa-newspaper', 'show' => true],
+                'events' => ['title' => 'Agenda & Kegiatan', 'subtitle' => 'Catat tanggalnya, Bapak/Ibu', 'desc' => 'Jadwal kegiatan dan acara mendatang di sekolah', 'icon' => 'fa-calendar-days', 'show' => true],
                 'gallery' => ['title' => 'Galeri', 'subtitle' => 'Lihat suasana kegiatan anak-anak', 'desc' => 'Momen belajar anak-anak terekam di sini', 'icon' => 'fa-images', 'show' => true],
                 'faq' => ['title' => 'FAQ', 'subtitle' => 'Pertanyaan yang sering diajukan orang tua', 'desc' => 'Jawaban atas pertanyaan yang paling sering ditanyakan', 'icon' => 'fa-circle-question', 'show' => true],
                 'downloads' => ['title' => 'Download Center', 'subtitle' => 'Unduh berkas penting: akademik, kurikulum, administrasi', 'icon' => 'fa-download', 'show' => true],
