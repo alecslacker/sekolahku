@@ -6,6 +6,19 @@
 
 Format: [Keep a Changelog](https://keepachangelog.com/id/1.1.0/) · Versioning: [SemVer](https://semver.org/lang/id/)
 
+## [Unreleased] — Kustomisasi DCI #6: Toast Notifikasi Admin (P2) (2026-09-23)
+
+### Ditambahkan (Added)
+- **`dciToast(pesan, tipe)`**: helper toast global di layout admin (CoreUI Toast, auto-dismiss 4 detik, tombol tutup, aria). Tersedia di semua halaman admin.
+
+### Diubah (Changed)
+- `alert()` di news/index (error AJAX quick edit, 2 titik) dan news/form (konten kosong) diganti `dciToast()` — teks Inggris "Content cannot be empty." di-Bahasa-Indonesia-kan.
+
+### Catatan Teknis
+- Pesan toast dirender via `textContent` — tahan XSS (terverifikasi dengan payload `<img onerror>`: dirender sebagai teks).
+- `confirm()` native untuk hapus data dipertahankan (pola wajar untuk konfirmasi destruktif).
+- Empty state teks sudah ada di 16 index admin — tidak diubah (YAGNI).
+
 ## [Unreleased] — Kustomisasi DCI #5: Rebrand Footer Admin + Seeder Produksi (2026-09-23)
 
 ### Ditambahkan (Added)

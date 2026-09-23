@@ -183,7 +183,7 @@ form.addEventListener('submit', function(e) {
     ta.value = content;
     if (content === '<p><br></p>' || content === '' || content === '<p></p>') {
         e.preventDefault();
-        alert('Content cannot be empty.');
+        dciToast('Konten berita tidak boleh kosong.', 'warning');
     }
 });
 

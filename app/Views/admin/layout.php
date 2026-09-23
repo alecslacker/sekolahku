@@ -187,6 +187,27 @@
         });
     });
     </script>
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index:1080"></div>
+    <script>
+    // Notifikasi toast global: dciToast('Pesan', 'danger')
+    window.dciToast = function(message, type = 'success') {
+        const container = document.querySelector('.toast-container');
+        const el = document.createElement('div');
+        const typeClass = { success: 'text-bg-success', danger: 'text-bg-danger', warning: 'text-bg-warning', info: 'text-bg-info' }[type] || 'text-bg-primary';
+        el.className = `toast align-items-center border-0 ${typeClass}`;
+        el.setAttribute('role', 'alert');
+        const body = document.createElement('div');
+        body.className = 'toast-body';
+        body.textContent = message; // textContent = aman dari XSS
+        el.innerHTML = `<div class="d-flex"><div class="toast-body"></div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-coreui-dismiss="toast" aria-label="Tutup"></button></div>`;
+        el.querySelector('.toast-body').replaceWith(body);
+        container.appendChild(el);
+        const toast = new coreui.Toast(el, { delay: 4000 });
+        toast.show();
+        el.addEventListener('hidden.coreui.toast', () => el.remove());
+    };
+    </script>
     <?= $this->renderSection('scripts') ?>
 </body>
 </html>

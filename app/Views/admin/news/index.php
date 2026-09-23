@@ -227,11 +227,11 @@ document.addEventListener('submit', function(e) {
             qeRow.classList.add('d-none');
             if (dataRow) dataRow.classList.remove('d-none');
         } else {
-            alert(data.error || 'Gagal menyimpan');
+            dciToast(data.error || 'Gagal menyimpan', 'danger');
         }
     })
     .catch(function() {
-        alert('Terjadi kesalahan. Silakan coba lagi.');
+        dciToast('Terjadi kesalahan. Silakan coba lagi.', 'danger');
     })
     .finally(function() {
         submitBtn.disabled = false;
